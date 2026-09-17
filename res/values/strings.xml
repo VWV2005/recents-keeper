@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">卡片守护</string>
+    <string name="module_description">最近任务划卡、一键清理时保留指定应用的后台进程</string>
+    <string name="scope_note">勾选的应用在划卡或一键清理时不会被结束进程，卡片本身仍会正常消失。</string>
+    <string name="invert">反向模式：改为保护未勾选的应用</string>
+    <string name="mode_system">系统层抑制：卡片正常消失、进程保留（取消勾选则退回桌面层拦截，卡片会重现）</string>
+    <string name="save">保存</string>
+    <string name="restart_launcher">重启桌面</string>
+    <string name="saved">已保存，%d 个应用受保护</string>
+    <string name="restart_done">桌面已重启</string>
+    <string name="restart_failed">重启桌面失败（需要 root 授权）</string>
+    <string name="need_write_settings">缺少“修改系统设置”权限，请执行一次：adb shell appops set io.github.recentskeeper WRITE_SETTINGS allow</string>
+</resources>

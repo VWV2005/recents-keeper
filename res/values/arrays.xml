@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Recommended LSPosed scope: the launcher decides the swipe dismissal, and
+         system_server is where the process kill is suppressed. -->
+    <string-array name="xposedscope">
+        <item>com.android.launcher</item>
+        <item>android</item>
+    </string-array>
+</resources>

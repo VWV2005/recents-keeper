@@ -1,0 +1,26 @@
+# Build output
+build/
+*.apk
+*.idsig
+
+# Signing material - never commit
+keystore.properties
+*.jks
+*.keystore
+
+# Local SDK location
+local.properties
+
+# Reverse-engineering scratch space (vendor binaries, disassembly dumps,
+# device screenshots and logs must never enter the repository)
+recon/
+*.dex
+*.db
+*.db-wal
+*.db-shm
+*.vdex
+*.oat
+
+# Python
+__pycache__/
+*.pyc
