@@ -15,20 +15,26 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          # Matches the JDK this module was verified against. The build only
-          # needs javac/jar/keytool and the build-tools' d8.
+          # Pinned to the JDK this build was verified against locally.
           java-version: '11'
 
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
+      # The runner image already ships an Android SDK with ANDROID_HOME set, so
+      # nothing is installed here on purpose: pulling in cmdline-tools would drag
+      # in sdkmanager, which requires JDK 17+ and would conflict with the JDK
+      # above. build.sh discovers the newest build-tools and platform itself.
+      - name: Show Android SDK
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          echo "--- build-tools ---"; ls "$ANDROID_HOME/build-tools" || true
+          echo "--- platforms ---";   ls "$ANDROID_HOME/platforms" || true
 
       - name: Build
         run: |
           chmod +x build.sh
           ./build.sh
 
-      # Signed with a throwaway debug key, so this artifact is for testing the
-      # build only - release builds should be signed with your own key.
+      # Signed with a throwaway debug key, so this artifact is for checking that
+      # the tree compiles and installs - sign your own releases with your key.
       - uses: actions/upload-artifact@v4
         with:
           name: RecentsKeeper-apk
