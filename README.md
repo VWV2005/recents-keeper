@@ -123,7 +123,7 @@ build.sh  mkapk.py             构建脚本
 GPL-3.0，见 [LICENSE](LICENSE)。
 
 ```
-Copyright (C) 2026 <your name>
+Copyright (C) 2026 Vv-Ww
 ```
 
 ---
