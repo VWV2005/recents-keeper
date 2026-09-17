@@ -1,0 +1,2 @@
+在 ColorOS / realme UI 上按应用决定：最近任务划卡、一键清理之后，进程要不要被结束。卡片本身照常消失，只抑制结束进程这一步。
+Per-app control over whether swiping a card away in Recents (or the one-key cleaner) kills the process on ColorOS / realme UI. The card still disappears.
