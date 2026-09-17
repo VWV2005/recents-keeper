@@ -1,0 +1,38 @@
+Third-party notice for libs/xposed-api-82.jar
+=============================================
+
+The compile-time API stubs in this directory are the classic Xposed API
+(API level 82), by rovo89 and Tungstwenty.
+
+    Copyright 2013 rovo89, Tungstwenty
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+The full license text is in LICENSE-Apache-2.0.txt next to this file.
+
+The jar is redistributed here unmodified, purely so that
+`javac -cp libs/xposed-api-82.jar` can resolve the de.robv.android.xposed.*
+symbols this module compiles against. Those classes are supplied at runtime by
+LSPosed; nothing from the jar is compiled into the module.
+
+The upstream distribution includes a NOTICE file for Apache Commons Lang, which
+is bundled inside the XposedBridge application - not inside this API jar, and
+therefore not reproduced here:
+
+    Apache Commons Lang
+    Copyright 2001-2011 The Apache Software Foundation
+
+    This product includes software developed by
+    The Apache Software Foundation (http://www.apache.org/).
+
+Upstream project: https://github.com/rovo89/XposedBridge
