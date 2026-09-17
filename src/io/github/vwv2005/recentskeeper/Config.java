@@ -1,4 +1,4 @@
-package io.github.recentskeeper;
+package io.github.vwv2005.recentskeeper;
 
 /**
  * Contract shared between the settings UI and the code injected into the
@@ -11,7 +11,7 @@ package io.github.recentskeeper;
 public final class Config {
 
     /** Our own package, i.e. the owner of the SharedPreferences below. */
-    public static final String MODULE_PACKAGE = "io.github.recentskeeper";
+    public static final String MODULE_PACKAGE = "io.github.vwv2005.recentskeeper";
 
     public static final String PREFS = "prefs";
     public static final String KEY_INVERT = "invert";

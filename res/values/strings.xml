@@ -10,5 +10,5 @@
     <string name="saved">已保存，%d 个应用受保护</string>
     <string name="restart_done">桌面已重启</string>
     <string name="restart_failed">重启桌面失败（需要 root 授权）</string>
-    <string name="need_write_settings">缺少“修改系统设置”权限，请执行一次：adb shell appops set io.github.recentskeeper WRITE_SETTINGS allow</string>
+    <string name="need_write_settings">缺少“修改系统设置”权限，请执行一次：adb shell appops set io.github.vwv2005.recentskeeper WRITE_SETTINGS allow</string>
 </resources>

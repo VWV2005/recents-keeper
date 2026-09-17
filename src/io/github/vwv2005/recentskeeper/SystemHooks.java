@@ -1,4 +1,4 @@
-package io.github.recentskeeper;
+package io.github.vwv2005.recentskeeper;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -37,7 +37,7 @@ final class SystemHooks {
     private static final String ATHENA_LOCAL_SERVICE =
             "com.android.server.am.OplusAthenaAmManager$LocalService";
     /** Force-stopping a package that does not exist is a no-op. */
-    private static final String NEUTRALISED_PACKAGE = "io.github.recentskeeper.neutralised";
+    private static final String NEUTRALISED_PACKAGE = "io.github.vwv2005.recentskeeper.neutralised";
     private static final long READY_PUBLISH_MS = 60000L;
     /** Packages that run one-key clean-up on this ROM. */
     private static final String[] CLEANER_PACKAGES = {

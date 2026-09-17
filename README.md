@@ -24,7 +24,7 @@ LSPosed 模块。已在 ColorOS 16（Android 16）上实测。
 - 授予一次「修改系统设置」权限，否则配置写不进系统设置：
 
 ```bash
-adb shell appops set io.github.recentskeeper WRITE_SETTINGS allow
+adb shell appops set io.github.vwv2005.recentskeeper WRITE_SETTINGS allow
 ```
 
 也可以在「设置 → 应用 → 卡片守护 → 权限」里打开对应开关。
@@ -125,7 +125,7 @@ GPL-3.0，见 [LICENSE](LICENSE)。
 仓库内还包含一处第三方组件：`libs/xposed-api-82.jar`（Xposed API 82 的编译期 stub，Apache-2.0，Copyright 2013 rovo89, Tungstwenty）。它只用于让 javac 能解析 `de.robv.android.xposed.*` 符号，运行时由 LSPosed 提供，不会被编进模块。其许可证全文与声明见 `libs/NOTICE.txt` 与 `libs/LICENSE-Apache-2.0.txt`。
 
 ```
-Copyright (C) 2026 Vv-Ww
+Copyright (C) 2026 VWV2005
 ```
 
 ---

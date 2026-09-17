@@ -1,4 +1,4 @@
-package io.github.recentskeeper;
+package io.github.vwv2005.recentskeeper;
 
 import de.robv.android.xposed.IXposedHookLoadPackage;
 import de.robv.android.xposed.callbacks.XC_LoadPackage;

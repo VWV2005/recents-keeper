@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="io.github.recentskeeper"
-    android:versionCode="1"
-    android:versionName="1.0">
+    package="io.github.vwv2005.recentskeeper"
+    android:versionCode="2"
+    android:versionName="1.1">
 
     <uses-sdk android:minSdkVersion="29" android:targetSdkVersion="34" />
 
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
     <!-- The protected list is published through Settings.System so the injected
          processes can read it without this app having to be alive. Grant once:
-         adb shell appops set io.github.recentskeeper WRITE_SETTINGS allow -->
+         adb shell appops set io.github.vwv2005.recentskeeper WRITE_SETTINGS allow -->
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
     <queries>

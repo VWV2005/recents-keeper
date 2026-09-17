@@ -1,4 +1,4 @@
-package io.github.recentskeeper;
+package io.github.vwv2005.recentskeeper;
 
 import android.app.AndroidAppHelper;
 import android.content.Context;
